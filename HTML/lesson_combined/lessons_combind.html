@@ -11,13 +11,47 @@
     />
   </head>
   <body>
-    <a class="amazonback" href="https://www.amazon.de/" target="_blank"
-      >Back to Amazon</a
-    >
-    <p class="item">Nike Black Running Shoes</p>
-    <p class="pricetag">39€ - in stock</p>
-    <p>Free delivery tomorrow</p>
-    <button class="addtocart">Add to Cart</button>
-    <button class="buynow">Buy now</button>
+    <div class="amazon_div">
+      <a class="amazonback" href="https://www.amazon.de/" target="_blank"
+        >Back to Amazon</a
+      >
+      <p class="item">Nike Black Running Shoes</p>
+      <p class="pricetag">39€ - in stock</p>
+      <p>Free delivery tomorrow</p>
+      <button class="addtocart">Add to Cart</button>
+      <button class="buynow">Buy now</button>
+    </div>
+
+    <div class="login_div">
+      <input class="first_name" type="text" placeholder="First name" />
+      <input class="last_name" type="text" placeholder="Last name" />
+      <input class="email" type="text" placeholder="Email" />
+      <button class="signup">Sign Up</button>
+    </div>
+
+    <div class="main-div">
+      <div style="background-color: lightblue">200px</div>
+      <div style="background-color: lightpink">75px</div>
+    </div>
+
+    <div style=" margin-top:10px; display: grid; grid-template-columns: 50px 1fr 75px">
+      <div style="background-color: lightpink;">50px</div>
+      <div style="background-color: lightblue;">1fr</div>
+      <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div style="margin-top:10px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px; row-gap: 10px;">
+        <div style="background-color: lightpink;">col1</div>
+        <div style="background-color: lightblue;">col2</div>
+        <div style="background-color: lightpink;">col3</div>
+        <div style="background-color: lightblue;">col4</div>
+        <div style="background-color: lightpink;">col1</div>
+        <div style="background-color: lightblue;">col2</div>
+        <div style="background-color: lightpink;">col3</div>
+        <div style="background-color: lightblue;">col4</div>
+      </div>
+    </div>
+
+
   </body>
 </html>
