@@ -1,6 +1,6 @@
-.data
+section .data
     hello db "Hello, World!",10,0
-.text
+section .text
     global _start
 _start:
     mov eax, 4
