@@ -9,5 +9,4 @@ int main()
     std::cin >> i;
     std::cout << std::endl;
     std::cout << "Ihre Ausgabe: "<< i << std::endl;
-
 }
