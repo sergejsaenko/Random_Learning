@@ -1,13 +1,16 @@
-.386
-.model flat, stdcall
+section .data
+    hello db "hello world",10,0
 
-.data
-.data?
-.const
+section .text
+    global _start
 
-.code
-start:
-    xor eax, eax
-    mov eax, 10
-    ret
-end start
+_start:
+    mov rax,1
+    mov rdi,1
+    mov rsi, hello
+    mov rdx,13
+    syscall
+
+    mov rax, 60
+    xor rdi, rdi
+    syscall
