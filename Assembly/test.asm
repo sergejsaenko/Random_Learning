@@ -1,14 +1,13 @@
-section .data
-    hello db "Hello, World!",10,0
-section .text
-    global _start
-_start:
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, hello
-    mov edx, 13
-    int 0x80
+.386
+.model flat, stdcall
 
-    mov eax, 1
-    xor ebx, ebx
-    int 0x80
+.data
+.data?
+.const
+
+.code
+start:
+    xor eax, eax
+    mov eax, 10
+    ret
+end start
